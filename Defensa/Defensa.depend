@@ -1,0 +1,131 @@
+# depslib dependency file v1.0
+1511444241 source:e:\defensa\defensa\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1510324829 e:\defensa\defensa\arraylist.h
+
+1511615937 source:e:\defensa\defensa\general.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"fun.h"
+	"ArrayList.h"
+	"parserDirectorio.h"
+	"parserBlack.h"
+
+1511617869 e:\defensa\defensa\fun.h
+
+1511615936 e:\defensa\defensa\parserdirectorio.h
+	"ArrayList.h"
+
+1511615936 e:\defensa\defensa\parserblack.h
+	"ArrayList.h"
+
+1511617928 source:e:\defensa\defensa\fun.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"fun.h"
+
+1511615388 source:e:\defensa\defensa\parserdirectorio.c
+
+1511618431 source:e:\defensa\defensa\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fun.h"
+	"ArrayList.h"
+	"General.h"
+	"parserDirectorio.h"
+	"parserBlack.h"
+
+1511616894 e:\defensa\defensa\general.h
+	"ArrayList.h"
+
+1511444241 source:g:\defensa\defensa\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1510324829 g:\defensa\defensa\arraylist.h
+
+1511729819 source:g:\defensa\defensa\fun.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"fun.h"
+
+1511729819 g:\defensa\defensa\fun.h
+
+1511742021 source:g:\defensa\defensa\blacklist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"fun.h"
+	"arrayList.h"
+	"BlackList.h"
+	"Destinatarios.h"
+
+1511741453 source:g:\defensa\defensa\destinatarios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"fun.h"
+	"arrayList.h"
+	"Destinatarios.h"
+
+1511741453 g:\defensa\defensa\destinatarios.h
+	"arrayList.h"
+
+1511743535 source:g:\defensa\defensa\general.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"fun.h"
+	"arrayList.h"
+	"Destinatarios.h"
+	"BlackList.h"
+	"Depurado.h"
+
+1511741453 g:\defensa\defensa\blacklist.h
+	"arrayList.h"
+
+1511743535 source:g:\defensa\defensa\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fun.h"
+	"arrayList.h"
+	"General.h"
+	"Depurado.h"
+
+1511742612 g:\defensa\defensa\general.h
+	"arrayList.h"
+
+1511743864 source:g:\defensa\defensa\depurado.c
+	<stdio.h>
+	<stdlib.h>
+	"fun.h"
+	"arrayList.h"
+	"General.h"
+	"Destinatarios.h"
+	"BlackList.h"
+	"Depurado.h"
+
+1511743678 g:\defensa\defensa\depurado.h
+	"arrayList.h"
+
