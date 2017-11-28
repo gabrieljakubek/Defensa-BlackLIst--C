@@ -71,14 +71,18 @@ int main()
                 else
                 {
                     auxInt = generarListaDepurada(listaDestinatario, listaBlack, listaDepurada);
-                    if(auxInt!=0)
+                    if(auxInt==0)
                     {
                         printf("\nSe logro depurar!!\n");
                         //printf("----%d----",listaDepurada->len(listaDepurada));
                     }
+                    else if(auxInt==1)
+                    {
+                        printf("\nNo existen nuevos correos a depurar!!\n");
+                    }
                     else
                     {
-                        printf("\nNo se logro depurar!!\n");
+                        printf("\nError no se logro depurar!!\n");
                     }
                 }
                 borrarPantalla();
