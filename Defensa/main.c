@@ -50,24 +50,31 @@ int main()
                 break;
 
             case 2:
-                auxInt = cargarBlackList(listaBlack,listaDestinatario);
-                if(auxInt != -1)
+                if(listaDestinatario->isEmpty(listaDestinatario)==1)
                 {
-                    printf("Se logro cargar la lista negra!!\n");
-                    //listarBloqueados(listaBlack);
-                    printf("----%d----",listaBlack->len(listaBlack));
+                    printf("\nCargue primero la lista de destinatarios\n");
                 }
                 else
                 {
-                    printf("\nError no se pudo dar de alta Producto o ID ya existente!!\n");
+                    auxInt = cargarBlackList(listaBlack,listaDestinatario);
+                    if(auxInt != -1)
+                    {
+                        printf("Se logro cargar la lista negra!!\n");
+                        //listarBloqueados(listaBlack);
+                        printf("----%d----",listaBlack->len(listaBlack));
+                    }
+                    else
+                    {
+                        printf("\nError no se pudo dar de alta Producto o ID ya existente!!\n");
+                    }
                 }
                 borrarPantalla();
                 break;
 
             case 3:
-               if(listaDestinatario->isEmpty(listaDestinatario) == 1 && (listaBlack->isEmpty(listaBlack) == 1))
+                if(listaDestinatario->isEmpty(listaDestinatario) == 1 && (listaBlack->isEmpty(listaBlack) == 1))
                 {
-                    printf("\nNo hay datos cargados como para realizar la accion!!!");
+                    printf("\nNo hay datos cargados como para realizar la accion!!!\n");
                 }
                 else
                 {
@@ -92,7 +99,7 @@ int main()
             case 4:
                 if(listaDepurada->isEmpty(listaDepurada) == 1)
                 {
-                    printf("\nNo hay datos cargados como para realizar la accion!!!");
+                    printf("\nNo hay datos cargados como para realizar la accion!!!\n");
                 }
                 else
                 {
