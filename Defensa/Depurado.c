@@ -9,10 +9,22 @@
 
 int depurar(ArrayList* listaDestinatarios, ArrayList* listaNegra, ArrayList* listaDepurada)
 {
-    int retorno = -1, auxResp, i;
+    int retorno = -1, auxResp, i, auxRemove = 0;
     //eDepurado* depurado;
     if(listaDepurada!=NULL && (listaDestinatarios!=NULL) && listaNegra!=NULL)
     {
+        if(listaDepurada->isEmpty(listaDepurada)==0)
+        {
+            for(i=0; i<listaDepurada->len(listaDepurada); i++)
+            {
+                auxResp = al_contains(listaNegra,listaDepurada->get(listaDepurada,i));
+                if(auxResp==1)
+                {
+                    listaDepurada->remove(listaDepurada,i);
+                    auxRemove = 1;
+                }
+            }
+        }
         for(i=0; i<listaDestinatarios->len(listaDestinatarios); i++)
         {
             auxResp = al_contains(listaNegra,listaDestinatarios->get(listaDestinatarios,i));
@@ -30,6 +42,10 @@ int depurar(ArrayList* listaDestinatarios, ArrayList* listaNegra, ArrayList* lis
                 }
                 //depurado = newDepurado();
             }
+        }
+        if(retorno==1 && auxRemove==1)
+        {
+            retorno = 0;
         }
     }
     return retorno;

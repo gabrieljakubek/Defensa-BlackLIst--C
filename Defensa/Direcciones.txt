@@ -1,3 +1,5 @@
 G:\Defensa\destinatarios.csv
 
 G:\Defensa\black_list.csv
+
+G:\Defensa\black_list - copia.csv

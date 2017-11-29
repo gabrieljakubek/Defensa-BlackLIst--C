@@ -9,7 +9,7 @@
 
 int parserDestinatario(ArrayList* lista, FILE* archivo)
 {
-    int auxRetorno = 0, flag = 1;
+    int auxRetorno = 0, flag = 1,i, auxRespuesta = 0;
     char nombre[100], correo[1000];
     eDestinatario* destinatario;
     if(lista!=NULL)
@@ -22,7 +22,19 @@ int parserDestinatario(ArrayList* lista, FILE* archivo)
                 fscanf(archivo,"%[^,],%[^\n]\n",nombre,correo);
                 setNombre(destinatario,nombre);
                 setDireccion(destinatario,correo);
-                lista->add(lista, destinatario);
+                for(i=0; i<lista->len(lista); i++)
+                {
+                    if(compareCorreo(correo,lista->get(lista,i))==0)
+                    {
+                        auxRespuesta = 1;
+                        break;
+                    }
+                }
+                if(auxRespuesta!=1)
+                {
+                    lista->add(lista, destinatario);
+                }
+                auxRespuesta = 0;
             }
             else
             {

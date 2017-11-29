@@ -10,7 +10,7 @@
 
 int parserBlackList(ArrayList* listaNegra, ArrayList* listaDestinatario, FILE* archivo)
 {
-    int auxRetorno = 0, flag = 1, i, auxResp, auxInt = 0;
+    int auxRetorno = 0, flag = 1, i, j, auxResp, auxInt = 0, auxCompare = 0;
     char nombre[100], correo[1000];
     //eBlackList* bloqueado;
     if(listaNegra!=NULL && listaDestinatario!=NULL)
@@ -32,10 +32,19 @@ int parserBlackList(ArrayList* listaNegra, ArrayList* listaDestinatario, FILE* a
                     break;
                 }
             }
-            if(auxInt!=0)
+            for(j=0; j<listaNegra->len(listaNegra); j++)
+            {
+                if(compareCorreo(correo,listaNegra->get(listaNegra,j))==0)
+                {
+                    auxCompare = 1;
+                    break;
+                }
+            }
+            if(auxInt!=0 && auxCompare!=1)
             {
                 listaNegra->add(listaNegra, listaDestinatario->get(listaDestinatario,i));
             }
+            auxCompare = 0;
             /*}
             else
             {

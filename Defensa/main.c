@@ -40,7 +40,7 @@ int main()
                 {
                     printf("Se logro cargar la lista de destinatarios!!\n");
                     //listarDestinatarios(listaDestinatario);
-                    //printf("----%d----",listaDestinatario->len(listaDestinatario));
+                    printf("----%d----",listaDestinatario->len(listaDestinatario));
                 }
                 else
                 {
@@ -55,6 +55,7 @@ int main()
                 {
                     printf("Se logro cargar la lista negra!!\n");
                     //listarBloqueados(listaBlack);
+                    printf("----%d----",listaBlack->len(listaBlack));
                 }
                 else
                 {
@@ -74,7 +75,7 @@ int main()
                     if(auxInt==0)
                     {
                         printf("\nSe logro depurar!!\n");
-                        //printf("----%d----",listaDepurada->len(listaDepurada));
+                        printf("----%d----",listaDepurada->len(listaDepurada));
                     }
                     else if(auxInt==1)
                     {
