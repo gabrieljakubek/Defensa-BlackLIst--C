@@ -14,6 +14,10 @@ int parserDestinatario(ArrayList* lista, FILE* archivo)
     eDestinatario* destinatario;
     if(lista!=NULL)
     {
+        if(lista->isEmpty(lista)==0)
+        {
+            lista->clear(lista);
+        }
         while (!feof(archivo))
         {
             destinatario = newDestinatario();

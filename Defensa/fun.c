@@ -8,21 +8,20 @@
 
 int mostrarMenu(char texto[])
 {
-    char opcion;
+    char opcion [2];
     int auxResp, respuesta;
     printf("%s", texto);
     printf("\nIngrese la opcion a usar: ");
-    //fflush(stdin);
-    //opcion = getchar();
-    opcion = getche();
-    auxResp = chequeoNumero(&opcion);
+    fflush(stdin);
+    gets(opcion);
+    auxResp = chequeoNumero(opcion);
     if(auxResp!=0)
     {
         respuesta = 0;
     }
     else
     {
-        respuesta=atoi(&opcion);
+        respuesta=atoi(opcion);
     }
     return respuesta;
 }
@@ -35,20 +34,16 @@ void borrarPantalla()
 
 int chequeoNumero(char num[])
 {
-    int i = 0, cont = 1;
+    int i = 0;
     int flag = 0;
-    //cont = strlen(num);
-    while (i<cont && flag == 0)
+    while (num[i]!='\0')
     {
-        if(isdigit(num[i])!=0)
+        if(!isdigit(num[i]))
         {
-            i++;
-        }
-        else
-        {
-            flag = -1;
+            flag=-1;
             break;
         }
+        i++;
     }
     return flag;
 }

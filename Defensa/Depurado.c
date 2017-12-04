@@ -13,7 +13,7 @@ int depurar(ArrayList* listaDestinatarios, ArrayList* listaNegra, ArrayList* lis
     //eDepurado* depurado;
     if(listaDepurada!=NULL && (listaDestinatarios!=NULL) && listaNegra!=NULL)
     {
-        if(listaDepurada->isEmpty(listaDepurada)==0)
+        /*if(listaDepurada->isEmpty(listaDepurada)==0)
         {
             for(i=0; i<listaDepurada->len(listaDepurada); i++)
             {
@@ -24,6 +24,10 @@ int depurar(ArrayList* listaDestinatarios, ArrayList* listaNegra, ArrayList* lis
                     auxRemove = 1;
                 }
             }
+        }*/
+        if(listaDepurada->isEmpty(listaDepurada)==0)
+        {
+            listaDepurada->clear(listaDepurada);
         }
         for(i=0; i<listaDestinatarios->len(listaDestinatarios); i++)
         {

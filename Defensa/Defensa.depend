@@ -137,7 +137,7 @@
 
 1510324829 g:\defensa\arraylist.h
 
-1511924500 source:g:\defensa\blacklist.c
+1512046240 source:g:\defensa\blacklist.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -156,7 +156,7 @@
 1511741453 g:\defensa\destinatarios.h
 	"arrayList.h"
 
-1511924055 source:g:\defensa\destinatarios.c
+1512046240 source:g:\defensa\destinatarios.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -166,7 +166,7 @@
 	"arrayList.h"
 	"Destinatarios.h"
 
-1511729819 source:g:\defensa\fun.c
+1512044925 source:g:\defensa\fun.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -200,7 +200,7 @@
 1511742612 g:\defensa\general.h
 	"arrayList.h"
 
-1511924939 source:g:\defensa\depurado.c
+1512046240 source:g:\defensa\depurado.c
 	<stdio.h>
 	<stdlib.h>
 	"fun.h"
@@ -208,5 +208,86 @@
 	"General.h"
 	"Destinatarios.h"
 	"BlackList.h"
+	"Depurado.h"
+
+1511444241 source:e:\defensa\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1510324829 e:\defensa\arraylist.h
+
+1512046240 source:e:\defensa\blacklist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"fun.h"
+	"arrayList.h"
+	"BlackList.h"
+	"Destinatarios.h"
+
+1511729819 e:\defensa\fun.h
+
+1511741453 e:\defensa\blacklist.h
+	"arrayList.h"
+
+1511741453 e:\defensa\destinatarios.h
+	"arrayList.h"
+
+1512046240 source:e:\defensa\depurado.c
+	<stdio.h>
+	<stdlib.h>
+	"fun.h"
+	"arrayList.h"
+	"General.h"
+	"Destinatarios.h"
+	"BlackList.h"
+	"Depurado.h"
+
+1511742612 e:\defensa\general.h
+	"arrayList.h"
+
+1511743678 e:\defensa\depurado.h
+	"arrayList.h"
+
+1512046240 source:e:\defensa\destinatarios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"fun.h"
+	"arrayList.h"
+	"Destinatarios.h"
+
+1512044925 source:e:\defensa\fun.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"fun.h"
+
+1511743535 source:e:\defensa\general.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"fun.h"
+	"arrayList.h"
+	"Destinatarios.h"
+	"BlackList.h"
+	"Depurado.h"
+
+1511926774 source:e:\defensa\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fun.h"
+	"arrayList.h"
+	"General.h"
 	"Depurado.h"
 

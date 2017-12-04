@@ -15,7 +15,10 @@ int parserBlackList(ArrayList* listaNegra, ArrayList* listaDestinatario, FILE* a
     //eBlackList* bloqueado;
     if(listaNegra!=NULL && listaDestinatario!=NULL)
     {
-        //auxLen = listaDestinatario->len(listaDestinatario);
+        if(listaNegra->isEmpty(listaNegra)==0)
+        {
+            listaNegra->clear(listaNegra);
+        }
         while (!feof(archivo))
         {
             /*bloqueado = newBloqueado();
